@@ -19,7 +19,7 @@
     height: 500px; 
 }
 
-/* Central Text */
+
 .central-text {
   font-family: "Comic Sans MS", cursive;
     position: absolute;
@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-/* Icons Styling */
+
 .icon {
     position: absolute;
     top: 50%;
@@ -97,9 +97,9 @@
 }
 
 
-/* Apply Animations to Each Icon */
+
 .orbit1 {
-    animation: orbit1 25s linear infinite; /* Increased duration for smoother orbit */
+    animation: orbit1 25s linear infinite; 
 }
 .orbit2 {
     animation: orbit2 25s linear infinite;
@@ -159,7 +159,7 @@
 
     @media only screen and (max-width: 600px) {
     .circle-container {
-        width: 300px; /* Reduced size for mobile */
+        width: 300px; 
         height: 300px;
     }
     
@@ -174,17 +174,17 @@
   
     .central-text {
         font-family: "Comic Sans MS", cursive;
-        font-size: 1rem; /* Smaller text for mobile */
+        font-size: 1rem; 
     }
 
     .icon {
-        font-size: 2rem; /* Smaller icons */
+        font-size: 2rem; 
     }
 
-    /* Reduce the orbit radius by decreasing the translate value */
+
     @keyframes orbit1 {
         from {
-            transform: rotate(0deg) translate(120px) rotate(0deg); /* Smaller orbit */
+            transform: rotate(0deg) translate(120px) rotate(0deg);
         }
         to {
             transform: rotate(360deg) translate(120px) rotate(-360deg);
@@ -239,7 +239,7 @@
 
     #contact {
         font-family: "Freestyle Script", cursive;
-        font-size: 3rem; /* Smaller contact icon */
+        font-size: 3rem; 
         bottom: 10px;
         right: 10px;
     }
