@@ -46,7 +46,17 @@
     
     <a id="contact" href="mailto:aryaejoumalai@gmail.com?subject=interview invite&body=Congratulations%F0%9F%8E%89%20Your%20profile%20has%20been%20shortlisted" target="blank">Contact me</a>
 
-
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const contact = document.getElementById("contact");
+  
+      if (params.get("source") === "resume") {
+        contact.href = "mailto:arya.emalai@gmail.com?subject=interview invite&body=Congratulations%F0%9F%8E%89%20Your%20profile%20has%20been%20shortlisted";
+  
+        const newUrl = window.location.origin + window.location.pathname;
+        window.history.replaceState({}, document.title, newUrl);
+      }
+    </script>
      
 
 </body>
